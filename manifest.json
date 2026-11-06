@@ -1,0 +1,10 @@
+{
+		"name": "URL Policy Manager",
+		"description": "Extension blocking or warning of potentially dangerous URLs",
+		"version": "0.1",
+		"manifest_version": 3,
+		"action": {
+				"default_popup": "popup/popup.html",
+				"default_icon": "images/icon.png"
+		}
+}

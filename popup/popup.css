@@ -1,0 +1,17 @@
+#header-div {
+    display: inline-block;
+    font-size: 25px;
+}
+
+#title-text {
+    float: left;
+    display: inline-block;
+}
+
+#settings {
+    max-width: 20%;
+    max-height: 20%;
+    float: right;
+    display: inline-block;
+	position: relative;
+}

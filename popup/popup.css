@@ -1,17 +1,106 @@
+body {
+    width: 320px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #1e1e1e;
+    background-color: #f9f9f9;
+}
+
 #header-div {
-    display: inline-block;
-    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
 }
 
 #title-text {
-    float: left;
-    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-#settings {
-    max-width: 20%;
-    max-height: 20%;
-    float: right;
-    display: inline-block;
-	position: relative;
+#settings-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#power-section {
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
+#power-btn {
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+#power-icon {
+    width: 40px;
+    height: 40px;
+}
+
+#power-btn.active { background-color: #3b82f6; }
+#power-btn.disabled { background-color: #9ca3af; }
+
+#status-section {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#status-verdict {
+    margin: 0;
+    font-size: 22px;
+}
+
+/* Status Colors */
+.safe { color: #2f9e44; }
+.warning { color: #f59f00; }
+.blocked { color: #e03131; }
+
+#stats-section {
+    background-color: #ffffff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+#stats-section p {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#stats-section span {
+    font-weight: bold;
+}
+
+#action-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+
+#action-footer button {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 4px;
+}
+
+#action-footer button:hover {
+    background-color: #f1f1f1;
 }

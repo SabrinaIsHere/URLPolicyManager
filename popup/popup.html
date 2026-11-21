@@ -1,12 +1,35 @@
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-	<div id="header-div">
-		<p id="title-text">URL Policy Manager</p>
-		<img id="settings" src="../images/settings.png">
-	</div>
-	<script src="popup.js"></script>
+    <div id="header-div">
+        <span id="title-text">URL Policy Manager</span>
+        <img id="settings-icon" src="../images/settings.png" alt="Settings" title="Settings">
+    </div>
+
+    <div id="power-section">
+        <button id="power-btn" class="active">
+            <img id="power-icon" src="../images/power.png" alt="Toggle Enforcement">
+        </button>
+    </div>
+
+    <div id="status-section">
+        <h2 id="status-verdict" class="safe">Safe</h2>
+    </div>
+
+    <div id="stats-section">
+        <p>Domains Scanned: <span id="scan-count">0</span></p>
+        <p>Threats Mitigated: <span id="threat-count">0</span></p>
+    </div>
+
+    <div id="action-footer">
+        <button id="btn-whitelist">Whitelist Domain</button>
+        <button id="btn-rescan">Force Re-Scan</button>
+        <button id="btn-logs">View Threat Logs</button>
+    </div>
+
+    <script src="popup.js"></script>
 </body>
 </html>
